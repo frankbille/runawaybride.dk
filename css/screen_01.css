@@ -1,0 +1,67 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #221e1f;
+	font-family: Trebuchet MS, Arial, sans-serif;
+}
+
+a img {
+	border: 0;
+}
+
+#outer {
+	background: #221e1f url(../images/back.jpg) no-repeat top left;
+	width: 862px;
+	height: 547px;
+	text-align: left;
+	position: relative;
+}
+
+#logo {
+	position: absolute;
+	top: 30px;
+	left: 272px;
+}
+
+#menu {
+	position: absolute;
+	top: 81px;
+	left: 627px;
+}
+
+#menu a {
+	display: block;
+	color: #c7c8ca;
+	font-weight: bold;
+	text-decoration: none;
+	margin-bottom: 22px;
+	font-size: 13px;
+}
+
+#menu a:hover {
+	color: white;	
+}
+
+#menu a.selected {
+	color: white;
+}
+
+#content {
+	position: absolute;
+	top: 89px;
+	left: 272px;
+	width: 300px;
+	height: 458px;
+	overflow: auto;
+	color: white;
+	font-size: 12px;
+	padding: 0;
+	padding-left: 2px;
+	padding-right: 5px;
+}
+
+#content p {
+	margin: 0;
+	margin-bottom: 12px;
+}

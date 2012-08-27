@@ -55,7 +55,7 @@
 					<div id="logo"><a href="index.html"><img src="images/logo.png" alt="Run Away Bride" /></a></div>
 					
 					<div id="menu">
-						<a href="at-sige-det-med-sang.html" onfocus="blurLink(this);">At sige det med sang</a>
+						<a href="at-sige-det-med-sang.html" onfocus="blurLink(this);" {% if currentpage=='at-sige-det-med-sang.html' %} {% endif %}>At sige det med sang</a>
 						<a href="musik-under-vielsen.html" onfocus="blurLink(this);">Musik under vielsen</a>
 						<a href="book-os-til.html" onfocus="blurLink(this);">Book os til...</a>
 						<a href="lydeksempler.html" onfocus="blurLink(this);">Lydeksempler</a>
@@ -65,6 +65,8 @@
 					</div>
 					
 					<div id="content">
+					{{ page.url }}
+										
 						{{ content }}
 					</div>
 					

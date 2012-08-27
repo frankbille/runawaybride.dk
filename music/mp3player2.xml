@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<player showDisplay="yes" showPlaylist="yes" autoStart="yes">
+    <song path="music/audio_12.mp3" title="Stand by me"/>
+    <song path="music/audio_02.mp3" title="How do I live"/>
+    <song path="music/audio_06.mp3" title="Lyse nætter"/>
+    <song path="music/audio_15.mp3" title="You got a friend"/>
+</player>
