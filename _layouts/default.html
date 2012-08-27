@@ -1,0 +1,85 @@
+<?xml version="1.1" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/screen_01.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+	<title>{{ page.title }}</title>
+	<script type="text/javascript">
+	/*<![CDATA[*/
+	<!--
+	browserName = navigator.appName;
+	browserVer = parseInt(navigator.appVersion);
+	var msie4 = (browserName == "Microsoft Internet Explorer" && browserVer >= 4);
+	if ((browserName == "Netscape" && browserVer >= 3) || msie4 || browserName=="Konqueror") {version = "n3";} else {version = "n2";}
+		// Blurring links:
+	function blurLink(theObject)	{	//
+		if (msie4)	{theObject.blur();}
+	}
+	// -->
+	/*]]>*/
+	</script>
+
+	<script type="text/javascript">
+	/*<![CDATA[*/
+	<!--
+	// JS function for uncrypting spam-protected emails:
+	function UnCryptMailto(s) {	//
+		var n=0;
+		var r="";
+		for(var i=0; i < s.length; i++) {
+			n=s.charCodeAt(i);
+			if (n>=8364) {n = 128;}
+			r += String.fromCharCode(n-(1));
+		}
+		return r;
+	}
+	// JS function for uncrypting spam-protected emails:
+	function linkTo_UnCryptMailto(s)	{	//
+		location.href=UnCryptMailto(s);
+	}
+	// -->
+	/*]]>*/
+	</script>
+
+</head>
+<body>
+
+	<table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+			<td align="center">
+			
+				<div id="outer">
+				
+					<div id="logo"><a href="index.html"><img src="images/logo.png" alt="Run Away Bride" /></a></div>
+					
+					<div id="menu">
+						<a href="at-sige-det-med-sang.html" onfocus="blurLink(this);">At sige det med sang</a>
+						<a href="musik-under-vielsen.html" onfocus="blurLink(this);">Musik under vielsen</a>
+						<a href="book-os-til.html" onfocus="blurLink(this);">Book os til...</a>
+						<a href="lydeksempler.html" onfocus="blurLink(this);">Lydeksempler</a>
+						<a href="repertoire.html" onfocus="blurLink(this);">Repertoire</a>
+						<a href="http://signestauner.dk" onfocus="blurLink(this);">Om Signe</a>
+						<a href="kontakt.html" onfocus="blurLink(this);">Kontakt</a>
+					</div>
+					
+					<div id="content">
+						{{ content }}
+					</div>
+					
+					<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+	
+					<script type="text/javascript">
+						_uacct = "UA-2367318-1";
+						urchinTracker();
+					</script>
+					
+				</div>
+			
+			</td>
+		</tr>
+	</table>
+
+</body>
+</html>
