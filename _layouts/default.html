@@ -20,29 +20,6 @@
 	// -->
 	/*]]>*/
 	</script>
-
-	<script type="text/javascript">
-	/*<![CDATA[*/
-	<!--
-	// JS function for uncrypting spam-protected emails:
-	function UnCryptMailto(s) {	//
-		var n=0;
-		var r="";
-		for(var i=0; i < s.length; i++) {
-			n=s.charCodeAt(i);
-			if (n>=8364) {n = 128;}
-			r += String.fromCharCode(n-(1));
-		}
-		return r;
-	}
-	// JS function for uncrypting spam-protected emails:
-	function linkTo_UnCryptMailto(s)	{	//
-		location.href=UnCryptMailto(s);
-	}
-	// -->
-	/*]]>*/
-	</script>
-
 </head>
 <body>
 
@@ -55,18 +32,16 @@
 					<div id="logo"><a href="index.html"><img src="images/logo.png" alt="Run Away Bride" /></a></div>
 					
 					<div id="menu">
-						<a href="at-sige-det-med-sang.html" onfocus="blurLink(this);" {% if currentpage=='at-sige-det-med-sang.html' %} {% endif %}>At sige det med sang</a>
-						<a href="musik-under-vielsen.html" onfocus="blurLink(this);">Musik under vielsen</a>
-						<a href="book-os-til.html" onfocus="blurLink(this);">Book os til...</a>
-						<a href="lydeksempler.html" onfocus="blurLink(this);">Lydeksempler</a>
-						<a href="repertoire.html" onfocus="blurLink(this);">Repertoire</a>
+						<a href="at-sige-det-med-sang.html" onfocus="blurLink(this);"{% if page.url == '/at-sige-det-med-sang.html' %} class="selected"{% endif %}>At sige det med sang</a>
+						<a href="musik-under-vielsen.html" onfocus="blurLink(this);"{% if page.url == '/musik-under-vielsen.html' %} class="selected"{% endif %}>Musik under vielsen</a>
+						<a href="book-os-til.html" onfocus="blurLink(this);"{% if page.url == '/book-os-til.html' %} class="selected"{% endif %}>Book os til...</a>
+						<a href="lydeksempler.html" onfocus="blurLink(this);"{% if page.url == '/lydeksempler.html' %} class="selected"{% endif %}>Lydeksempler</a>
+						<a href="repertoire.html" onfocus="blurLink(this);"{% if page.url == '/repertoire.html' %} class="selected"{% endif %}>Repertoire</a>
 						<a href="http://signestauner.dk" onfocus="blurLink(this);">Om Signe</a>
-						<a href="kontakt.html" onfocus="blurLink(this);">Kontakt</a>
+						<a href="kontakt.html" onfocus="blurLink(this);"{% if page.url == '/kontakt.html' %} class="selected"{% endif %}>Kontakt</a>
 					</div>
 					
 					<div id="content">
-					{{ page.url }}
-										
 						{{ content }}
 					</div>
 					
