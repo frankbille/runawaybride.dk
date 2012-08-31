@@ -73,21 +73,6 @@
 	</style>
 	<title>{{ page.title }}</title>
 	<script type="text/javascript">
-	/*<![CDATA[*/
-	<!--
-	browserName = navigator.appName;
-	browserVer = parseInt(navigator.appVersion);
-	var msie4 = (browserName == "Microsoft Internet Explorer" && browserVer >= 4);
-	if ((browserName == "Netscape" && browserVer >= 3) || msie4 || browserName=="Konqueror") {version = "n3";} else {version = "n2";}
-		// Blurring links:
-	function blurLink(theObject)	{	//
-		if (msie4)	{theObject.blur();}
-	}
-	// -->
-	/*]]>*/
-	</script>
-	
-	<script type="text/javascript">
 	var _gaq = _gaq || [];
   	_gaq.push(['_setAccount', 'UA-2367318-1']);
 	_gaq.push(['_trackPageview']);
@@ -110,17 +95,17 @@
 					<div id="logo"><a href="index.html"><img src="images/logo.png" alt="Run Away Bride" width="198" height="32"></a></div>
 					
 					<div id="menu">
-						<a href="at-sige-det-med-sang.html" onfocus="blurLink(this);"{% if page.url == '/at-sige-det-med-sang.html' %} class="selected"{% endif %}>At sige det med sang</a>
-						<a href="musik-under-vielsen.html" onfocus="blurLink(this);"{% if page.url == '/musik-under-vielsen.html' %} class="selected"{% endif %}>Musik under vielsen</a>
-						<a href="book-os-til.html" onfocus="blurLink(this);"{% if page.url == '/book-os-til.html' %} class="selected"{% endif %}>Book os til...</a>
-						<a href="lydeksempler.html" onfocus="blurLink(this);"{% if page.url == '/lydeksempler.html' %} class="selected"{% endif %}>Lydeksempler</a>
-						<a href="repertoire.html" onfocus="blurLink(this);"{% if page.url == '/repertoire.html' %} class="selected"{% endif %}>Repertoire</a>
-						<a href="http://signestauner.dk" onfocus="blurLink(this);">Om Signe</a>
-						<a href="kontakt.html" onfocus="blurLink(this);"{% if page.url == '/kontakt.html' %} class="selected"{% endif %}>Kontakt</a>
+						<a href="at-sige-det-med-sang.html"{% if page.url == '/at-sige-det-med-sang.html' %} class="selected"{% endif %}>At sige det med sang</a>
+						<a href="musik-under-vielsen.html"{% if page.url == '/musik-under-vielsen.html' %} class="selected"{% endif %}>Musik under vielsen</a>
+						<a href="book-os-til.html"{% if page.url == '/book-os-til.html' %} class="selected"{% endif %}>Book os til...</a>
+						<a href="lydeksempler.html"{% if page.url == '/lydeksempler.html' %} class="selected"{% endif %}>Lydeksempler</a>
+						<a href="repertoire.html"{% if page.url == '/repertoire.html' %} class="selected"{% endif %}>Repertoire</a>
+						<a href="http://signestauner.dk">Om Signe</a>
+						<a href="kontakt.html"{% if page.url == '/kontakt.html' %} class="selected"{% endif %}>Kontakt</a>
 					</div>
 					
 					<div id="content">
-						{{ content }}
+{{ content }}
 					</div>
 					
 				</div>
