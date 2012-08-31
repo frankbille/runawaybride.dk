@@ -1,10 +1,76 @@
-<?xml version="1.1" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da">
+<!DOCTYPE html>
+<html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link rel="stylesheet" type="text/css" href="css/screen_01.css" media="screen" />
-	<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			background-color: #221e1f;
+			font-family: Trebuchet MS, Arial, sans-serif;
+		}
+		
+		a img {
+			border: 0;
+		}
+		
+		#outer {
+			background: #221e1f url(../images/back.jpg) no-repeat top left;
+			width: 862px;
+			height: 547px;
+			text-align: left;
+			position: relative;
+		}
+		
+		#logo {
+			position: absolute;
+			top: 30px;
+			left: 272px;
+		}
+		
+		#menu {
+			position: absolute;
+			top: 81px;
+			left: 627px;
+		}
+		
+		#menu a {
+			display: block;
+			color: #c7c8ca;
+			font-weight: bold;
+			text-decoration: none;
+			margin-bottom: 22px;
+			font-size: 13px;
+		}
+		
+		#menu a:hover {
+			color: white;	
+		}
+		
+		#menu a.selected {
+			color: white;
+		}
+		
+		#content {
+			position: absolute;
+			top: 89px;
+			left: 272px;
+			width: 300px;
+			height: 458px;
+			overflow: auto;
+			color: white;
+			font-size: 12px;
+			padding: 0;
+			padding-left: 2px;
+			padding-right: 5px;
+		}
+		
+		#content p {
+			margin: 0;
+			margin-bottom: 12px;
+		}
+	</style>
 	<title>{{ page.title }}</title>
 	<script type="text/javascript">
 	/*<![CDATA[*/
@@ -41,7 +107,7 @@
 			
 				<div id="outer">
 				
-					<div id="logo"><a href="index.html"><img src="images/logo.png" alt="Run Away Bride" /></a></div>
+					<div id="logo"><a href="index.html"><img src="images/logo.png" alt="Run Away Bride" width="198" height="32"></a></div>
 					
 					<div id="menu">
 						<a href="at-sige-det-med-sang.html" onfocus="blurLink(this);"{% if page.url == '/at-sige-det-med-sang.html' %} class="selected"{% endif %}>At sige det med sang</a>
